@@ -1,5 +1,12 @@
+
+
 <?php
-  if(isset($_POST['AddSchool'])){
+
+include('function.php');
+secure();
+
+
+if(isset($_POST['AddSchool'])){
     //print_r($_POST);
     // Array ( [BoardName] => hetul [SchoolName] => hetul private school [Email] => test@gmail.com [AddSchool] => Submit )
 
