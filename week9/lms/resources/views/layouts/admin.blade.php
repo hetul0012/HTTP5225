@@ -21,13 +21,19 @@
     </button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav me-auto">
-        {{-- If you don't have a named "home" route, change to url("/") --}}
         <li class="nav-item"><a class="nav-link" href="{{ route('courses.index') }}">Courses</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ route('students.index') }}">Students</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ route('students.create') }}">Add Student</a></li>
+
+        {{-- NEW: Professors --}}
+        <li class="nav-item"><a class="nav-link" href="{{ route('professors.index') }}">Professors</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('professors.create') }}">Add Professor</a></li>
       </ul>
-      <div class="d-flex">
+
+      <div class="d-flex gap-2">
         <a href="{{ route('courses.create') }}" class="btn btn-primary">+ New Course</a>
+        {{-- NEW: quick-create Professor --}}
+        <a href="{{ route('professors.create') }}" class="btn btn-outline-primary">+ New Professor</a>
       </div>
     </div>
   </div>
